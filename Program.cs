@@ -5,22 +5,22 @@ using MiniAccountManagementSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔧 Configure EF Core with SQL Server
+// Configure EF Core with SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 🔒 Add Identity with Roles
+// Add Identity with Roles
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
-// ✅ Add custom database service
+//  Add custom database service
 builder.Services.AddScoped<DatabaseService>();
 builder.Services.AddScoped<UserManager<IdentityUser>>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 builder.Services.AddRazorPages();
 
-// 🔐 Cookie Settings
+//  Cookie Settings
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login";
@@ -29,7 +29,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 var app = builder.Build();
 
-// 🌐 Middleware
+// Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -45,7 +45,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-// 🔄 Seed Roles
+// Seed Roles
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
