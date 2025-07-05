@@ -1,10 +1,38 @@
-﻿@page
+﻿@* @page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mar">
+    <h1 class="display-4 pa">Mini Accountant Management System<</h1>
+ 
+</div> *@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    .full-screen-center {
+        height: 100vh; /* full viewport height */
+        display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center;     /* center vertically */
+        text-align: center;
+        background: linear-gradient(135deg, #667eea, #764ba2); /* pretty gradient background */
+        color: #f8f9fa; /* light text */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .pa {
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+</style>
+
+<div class="full-screen-center">
+    <h1 class="display-4 pa">Mini Accountant Management System</h1>
 </div>

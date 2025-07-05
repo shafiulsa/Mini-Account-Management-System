@@ -1,0 +1,40 @@
+@page
+@model MiniAccountManagementSystem.Pages.ChartOfAccounts.All
+@{
+    ViewData["Title"] = "All";
+}
+
+
+
+<h2>All Chart of Accounts</h2>
+
+<a asp-page="/ChartOfAccounts/Create" class="btn btn-success mb-3">Create New Account</a>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Parent Account</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var acc in Model.Accounts)
+        {
+            <tr>
+                <td>@acc.Name</td>
+                <td>@acc.Balance.ToString("C")</td>
+                <td>@(acc.ParentAccountId.HasValue ? acc.ParentAccountId.ToString() : "None")</td>
+                <td>
+                    <a asp-page="/ChartOfAccounts/Edit" asp-route-id="@acc.Id" class="btn btn-sm btn-primary">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </a>
+                    <a asp-page="/ChartOfAccounts/Delete" asp-route-id="@acc.Id" class="btn btn-sm btn-danger">
+                        <i class="bi bi-trash"></i> Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

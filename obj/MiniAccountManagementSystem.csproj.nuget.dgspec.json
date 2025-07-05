@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj": {}
+    "/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj": {}
   },
   "projects": {
-    "/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj": {
+    "/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj",
+        "projectUniqueName": "/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj",
         "projectName": "MiniAccountManagementSystem",
-        "projectPath": "/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj",
+        "projectPath": "/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/MiniAccountManagementSystem.csproj",
         "packagesPath": "/home/shafiul/.nuget/packages/",
-        "outputPath": "/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/obj/",
+        "outputPath": "/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shafiul/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"

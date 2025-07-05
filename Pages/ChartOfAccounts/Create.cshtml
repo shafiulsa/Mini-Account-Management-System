@@ -1,0 +1,30 @@
+@page
+@model MiniAccountManagementSystem.Pages.ChartOfAccounts.Create
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="Account.Name" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Balance</label>
+        <input asp-for="Account.Balance" class="form-control" type="number" step="0.01" required />
+    </div>
+    <div class="form-group">
+        <label>Parent Account</label>
+        <select asp-for="Account.ParentAccountId" class="form-control">
+            <option value="">-- None --</option>
+            @foreach (var acc in Model.AllAccounts)
+            {
+                <option value="@acc.Id">@acc.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

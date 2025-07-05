@@ -1,0 +1,20 @@
+@page
+@model MiniAccountManagementSystem.Pages.ChartOfAccounts.Delete
+@{
+    ViewData["Title"] = "Delete";
+}
+
+@* <h1>@ViewData["Title"]</h1> *@
+
+
+<h2>Delete Confirmation</h2>
+
+<div class="alert alert-danger">
+    Are you sure you want to delete the account <strong>@Model.Account.Name</strong>?
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="Account.Id" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

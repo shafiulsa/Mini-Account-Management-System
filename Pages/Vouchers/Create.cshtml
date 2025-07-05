@@ -1,0 +1,102 @@
+@page
+@model MiniAccountManagementSystem.Pages.Vouchers.CreateModel
+@{
+    ViewData["Title"] = "Create Voucher";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Voucher.VoucherType" class="control-label"></label>
+        <select asp-for="Voucher.VoucherType" class="form-control">
+            <option value="Payment">Payment</option>
+            <option value="Receipt">Receipt</option>
+            <option value="Journal">Journal</option>
+        </select>
+        <span asp-validation-for="Voucher.VoucherType" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Voucher.VoucherDate" class="control-label"></label>
+        <input asp-for="Voucher.VoucherDate" class="form-control" type="date" />
+        <span asp-validation-for="Voucher.VoucherDate" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Voucher.ReferenceNo" class="control-label"></label>
+        <input asp-for="Voucher.ReferenceNo" class="form-control" />
+        <span asp-validation-for="Voucher.ReferenceNo" class="text-danger"></span>
+    </div>
+
+    <h4>Voucher Entries</h4>
+    <div id="entries-container">
+        @for (int i = 0; i < Model.Entries.Count; i++)
+        {
+            <div class="entry-row mb-3 border p-2">
+                <div class="form-group">
+                    <label class="control-label">Account</label>
+                    <select asp-for="Entries[i].AccountId" class="form-control" 
+                            asp-items="@(new SelectList(Model.Accounts, "Id", "Name"))">
+                        <option value="">-- Select Account --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Debit</label>
+                    <input asp-for="Entries[i].Debit" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Credit</label>
+                    <input asp-for="Entries[i].Credit" class="form-control" />
+                </div>
+                <button type="button" class="btn btn-danger remove-entry">Remove</button>
+            </div>
+        }
+    </div>
+    
+    <button type="button" id="add-entry" class="btn btn-secondary mb-3">Add Entry</button>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#add-entry").click(function() {
+                var index = $("#entries-container .entry-row").length;
+                var html = `
+                    <div class="entry-row mb-3 border p-2">
+                        <div class="form-group">
+                            <label class="control-label">Account</label>
+                            <select name="Entries[${index}].AccountId" class="form-control">
+                                <option value="">-- Select Account --</option>
+                                @foreach (var account in Model.Accounts)
+                                {
+                                    <option value="@account.Id">@account.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Debit</label>
+                            <input name="Entries[${index}].Debit" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Credit</label>
+                            <input name="Entries[${index}].Credit" class="form-control" />
+                        </div>
+                        <button type="button" class="btn btn-danger remove-entry">Remove</button>
+                    </div>`;
+                $("#entries-container").append(html);
+            });
+
+            $(document).on("click", ".remove-entry", function() {
+                $(this).closest(".entry-row").remove();
+                // Reindex remaining entries
+                $("#entries-container .entry-row").each(function(index) {
+                    $(this).find("select").attr("name", `Entries[${index}].AccountId`);
+                    $(this).find("input").eq(0).attr("name", `Entries[${index}].Debit`);
+                    $(this).find("input").eq(1).attr("name", `Entries[${index}].Credit`);
+                });
+            });
+        });
+    </script>
+}

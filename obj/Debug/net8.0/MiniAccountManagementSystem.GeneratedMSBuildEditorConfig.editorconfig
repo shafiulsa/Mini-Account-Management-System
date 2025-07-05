@@ -9,39 +9,103 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniAccountManagementSystem
 build_property.RootNamespace = MiniAccountManagementSystem
-build_property.ProjectDir = /home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/
+build_property.ProjectDir = /home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem
+build_property.MSBuildProjectDirectory = /home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Error.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL0FsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ChartOfAccounts/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhcnRPZkFjY291bnRzL1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Index.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Privacy.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ManageUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFuYWdlVXNlcnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/ManageUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFuYWdlVXNlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/_ViewImports.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Vouchers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVm91Y2hlcnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Vouchers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVm91Y2hlcnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Vouchers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVm91Y2hlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Vouchers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVm91Y2hlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/_ViewStart.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/shafiul/Desktop/Dotnet/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Shared/_Layout.cshtml]
+[/home/shafiul/Desktop/MiniAccountManagementSystem/MiniAccountManagementSystem/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fxw2ci86gf

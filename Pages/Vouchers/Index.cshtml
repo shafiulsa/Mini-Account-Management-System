@@ -1,0 +1,38 @@
+@page
+@model MiniAccountManagementSystem.Pages.Vouchers.Index
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Reference No</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Vouchers)
+        {
+            <tr>
+                <td>@item.VoucherId</td>
+                <td>@item.VoucherType</td>
+                <td>@item.VoucherDate.ToString("yyyy-MM-dd")</td>
+                <td>@item.ReferenceNo</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.VoucherId">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.VoucherId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
