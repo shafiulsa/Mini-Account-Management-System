@@ -35,68 +35,11 @@ A role-based ASP.NET Core Razor Pages application to manage Chart of Accounts an
 ## 🏗 Folder Structure
 
 ```
+![image](https://github.com/user-attachments/assets/a7db8ab0-d9fa-41f5-9a78-61f337bc3382)
+![image](https://github.com/user-attachments/assets/4126e929-2395-4488-8a38-aad8033108d9)
+![image](https://github.com/user-attachments/assets/bfc6605c-582f-489a-b7fb-bf64f2b16872)
 
-MiniAccountManagementSystem/
-└── Microsoft.CodeAnalysis.Workspaces.resources.dll
-├── Data
-│   └── AppDbContext.cs
-├── MiniAccountManagementSystem.csproj
-├── Models
-│   ├── Account.cs
-│   ├── AccountTypes.cs
-│   ├── RolePermission.cs
-│   ├── Voucher.cs
-│   └── VoucherEntry.cs
-├── Pages
-│   ├── Account
-│   │   ├── AccessDenied.cshtml
-│   │   ├── AccessDenied.cshtml.cs
-│   │   ├── Login.cshtml
-│   │   ├── Login.cshtml.cs
-│   │   ├── Logout.cshtml
-│   │   ├── Logout.cshtml.cs
-│   │   ├── Register.cshtml
-│   │   └── Register.cshtml.cs
-│   ├── ChartOfAccounts
-│   │   ├── All.cshtml
-│   │   ├── All.cshtml.cs
-│   │   ├── Create.cshtml
-│   │   ├── Create.cshtml.cs
-│   │   ├── Delete.cshtml
-│   │   ├── Delete.cshtml.cs
-│   │   ├── Edit.cshtml
-│   │   ├── Edit.cshtml.cs
-│   │   ├── Index.cshtml
-│   │   ├── Index.cshtml.cs
-│   │   ├── View.cshtml
-│   │   └── View.cshtml.cs
-│   ├── Error.cshtml
-│   ├── Error.cshtml.cs
-│   ├── Index.cshtml
-│   ├── Index.cshtml.cs
-│   ├── ManageUsers
-│   │   ├── Delete.cshtml
-│   │   ├── Delete.cshtml.cs
-│   │   ├── Edit.cshtml
-│   │   └── Edit.cshtml.cs
-│   ├── Privacy.cshtml
-│   ├── Privacy.cshtml.cs
-│   ├── Shared
-│   │   ├── _Layout.cshtml
-│   │   ├── _Layout.cshtml.css
-│   │   └── _ValidationScriptsPartial.cshtml
-│   ├── _ViewImports.cshtml
-│   ├── _ViewStart.cshtml
-│   └── Vouchers
-│       ├── Create.cshtml
-│       ├── Create.cshtml.cs
-│       ├── Delete.cshtml
-│       ├── Delete.cshtml.cs
-│       ├── Edit.cshtml
-│       ├── Edit.cshtml.cs
-│       ├── Index.cshtml
-│       └── Index.cshtml.cs
-├── Program.cs
+
 
 └── README.md
 
