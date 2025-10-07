@@ -1,25 +1,25 @@
 
 
 ```markdown
-# 📘 Mini Account Management System
+#  Mini Account Management System
 
 A role-based ASP.NET Core Razor Pages application to manage Chart of Accounts and Vouchers using SQL Server stored procedures. Built with clean structure, identity-based security, and full CRUD features.
 
 ---
 
-## 📦 Features
+##  Features
 
-- 🔐 ASP.NET Identity Authentication with custom roles (Admin, Accountant, Viewer)
-- 📋 Chart of Accounts (Hierarchical)
-- 💳 Voucher Management (Journal, Payment, Receipt)
-- 🧾 Multi-line Debit/Credit Entries using Table-Valued Parameters (TVP)
-- 🧑‍💻 Role-based access (View/Edit/Delete permissions)
-- 📤 Export to Excel using ClosedXML
-- 🧮 Stored procedure–based logic (no LINQ)
+-  ASP.NET Identity Authentication with custom roles (Admin, Accountant, Viewer)
+- Chart of Accounts (Hierarchical)
+- Voucher Management (Journal, Payment, Receipt)
+-  Multi-line Debit/Credit Entries using Table-Valued Parameters (TVP)
+-  Role-based access (View/Edit/Delete permissions)
+-  Export to Excel using ClosedXML
+-  Stored procedure–based logic (no LINQ)
 
 ---
 
-## 🧰 Technologies Used
+##  Technologies Used
 
 | Stack       | Description |
 |-------------|-------------|
@@ -32,7 +32,7 @@ A role-based ASP.NET Core Razor Pages application to manage Chart of Accounts an
 
 ---
 
-## 🏗 Folder Structure
+##  Folder Structure
 
 ```
 ![image](https://github.com/user-attachments/assets/a7db8ab0-d9fa-41f5-9a78-61f337bc3382)
@@ -47,9 +47,9 @@ A role-based ASP.NET Core Razor Pages application to manage Chart of Accounts an
 
 ---
 
-## 🛠 Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Prerequisites
+### 1️ Prerequisites
 
 - [.NET SDK 8.0](https://dotnet.microsoft.com/)
 - SQL Server (LocalDB or Full)
@@ -57,7 +57,7 @@ A role-based ASP.NET Core Razor Pages application to manage Chart of Accounts an
 
 ---
 
-### 2️⃣ Clone and Restore
+### 2️ Clone and Restore
 
 ```bash
 git clone https://github.com/yourname/MiniAccountManagementSystem.git
@@ -67,7 +67,7 @@ dotnet restore
 
 ---
 
-### 3️⃣ Update `appsettings.json`
+### 3️ Update `appsettings.json`
 
 ```{
   "Logging": {
@@ -86,18 +86,18 @@ dotnet restore
 
 ---
 
-### 4️⃣ SQL Setup
+### 4️ SQL Setup
 
 ---
 
-### 5️⃣ Run the Project
+### 5️ Run the Project
 
 ## Note
 Built using Ubuntu 22.04 LTS and Visual Studio Code with .NET SDK 8.  
 Designed for scalable web development and cloud deployment on Microsoft Azure.  
 Supports Azure App Service, Azure SQL, and modern CI/CD workflows.
 ---
-## 📘 Screenshots
+##  Screenshots
 ![image](https://github.com/user-attachments/assets/6e30c977-5938-48ce-b559-081256d7b463)
 ![image](https://github.com/user-attachments/assets/03d156c6-1b09-4d21-a9ad-49caf9681ea8)
 ![image](https://github.com/user-attachments/assets/a5a9a5c6-db9e-4883-b76c-c76c30ea86e3)
@@ -132,7 +132,7 @@ Supports Azure App Service, Azure SQL, and modern CI/CD workflows.
 
 
 
-## 📘 Stored Procedure & SQL
+##  Stored Procedure & SQL
 
 ### SQL
 
@@ -395,7 +395,7 @@ GO
 
 
 
-## 🙋‍♂️ Author
+##  Author
 
 **Shafiul Islam**
 B.Sc in ICT – MBSTU
